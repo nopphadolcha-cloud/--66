@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Mali&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+body {
+    background-color: #f4f4f4;
+}
+
+/* --- 1. สไตล์แถบเมนู (Navbar) --- */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* เน้นเมนูที่กำลังเปิดอยู่ */
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-weight: bold;
+    color: #333333 !important;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.image-container {
+    position: relative;
+    width: 100%;       /* เต็มความกว้าง */
+    height: 350px;     /* เต็มความสูงหน้าจอ */
+    overflow: hidden;  /* ซ่อนส่วนเกินของภาพ */
+}
+
+.image-container img {
+    width: 100%;       /* ขยายให้เต็มความกว้าง */
+    height: 100%;      /* ขยายให้เต็มความสูง */
+    object-fit: cover; /* ครอบคลุม container โดยไม่บิดเบี้ยว */
+    object-position: center; /* จัดตำแหน่งตรงกลาง */
+}
+
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* --- 2. สไตล์รูปภาพแบนเนอร์ (Hero) --- */
+
+
+.hero-text {
+    position: relative; 
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+/* min-height:100vh → body ยาวเท่ากับความสูงหน้าจอ */
+body {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    min-height: 100vh;
+}
+
+
+/* Hero Section */
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    max-width: 1200px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+/* Image Background Section*/
+
+.img-background {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    justify-content: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+    padding: 20px;
+    /* background: rgba(255, 255, 255, 0.85); เพิ่มพื้นหลังโปร่งแสงเพื่อให้อ่านง่าย */
+    /* border-radius: 10px; */
+    width: 90%;
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
+    color: #2e7d32;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+
+/* Content Section */
+
+.content {   
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    max-width: 1200px;
+}
+
+.content h2 {   
+    text-align: start;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.content h4 {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+
+ 
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #4caf50;
+    text-align: center; /* เพิ่มเพื่อให้ข้อความในการ์ดอยู่กลาง */
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+.card.organic ul {
+    text-align: left;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    list-style-position: inside;
+}
+.card.general ul {
+    text-align: left;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    list-style-position: inside;
+}
+
+
+
+/* สีของการ์ดแต่ละประเภทขยะ */
+.card.recycle { 
+    border-top-color: #2196f3; /* น้ำเงิน - รีไซเคิล */
+}
+
+.card.organic { 
+    border-top-color: #4caf50; /* เขียว - อินทรีย์ */
+}
+
+.card.general { 
+    border-top-color: #ff9800; /* ส้ม - ทั่วไป */
+}
+
+.card.hazard { 
+    border-top-color: #f44336; /* แดง - อันตราย */
+}
+
+
+/*  Button */
+
+.btn {
+    display: inline-block; 
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #ffffff; 
+    border: 1px solid #555; 
+    color: #333; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 20px; 
+    font-weight: bold;
+    transition: all 0.3s ease; 
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background-color: #333; 
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+} 
+
+
+/* --- สไตล์เส้นคั่น --- */
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #eeeeee; 
+    margin: 30px 0; 
+}
+
+/* --- สไตล์ปุ่ม 2 ปุ่มล่าง --- */
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 20px 0; 
+}
+/* Modal และ Form */
+
+.modal-body .form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+
+
+
+
+
+/* ปรับขนาด font, grid, button, video ให้เหมาะสมกับหน้าจอมือถือ/แท็บเล็ต */
+
+@media (max-width: 768px) {
+    /* Hero */
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    /* Hero Text on Image */
+    .hero-text {
+        top: 20%;
+        padding: 15px;
+        width: 95%;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+    
+    /* Content */
+    .content {
+        padding: 2rem 1rem;
+    }
+    
+    .content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content h4 {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    /* Grid */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Button */
+    .btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    /* Video */
+    .video-center video {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 1.2rem;
+    }
+    
+    .hero-text p {
+        font-size: 0.8rem;
+    }
+    
+    .card-icon {
+        font-size: 2.5rem;
+    }
+    
+    .card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+footer {
+    background-color: #2e7d32; /* ใช้สีเดียวกับธีมเว็บ */
+    color: whitesmoke;
+    padding: 20px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+footer .btn.btn-primary {
+    background: #0d6efd; /* สีน้ำเงิน default ของ Bootstrap */
+    border-color: #0d6efd;
+    color: white !important; /* บังคับให้ไอคอนเป็นสีขาว */
+}
+
+footer .btn.btn-dark {
+    background: #212529; /* สีดำ default ของ Bootstrap */
+    border-color: #212529;
+    color: white !important;
+}
+
+footer .btn.btn-danger {
+    background: #dc3545; /* สีแดง default ของ Bootstrap */
+    border-color: #dc3545;
+    color: white !important;
+}
+
+/* --- (FIX) สไตล์ตอนเอาเมาส์ชี้ด้วย --- */
+footer .btn.btn-primary:hover {
+    background: #0b5ed7; 
+    border-color: #0a58ca;
+}
+
+footer .btn.btn-dark:hover {
+    background: #1c1f23;
+    border-color: #1a1e21;
+}
+
+footer .btn.btn-danger:hover {
+    background: #bb2d3b;
+    border-color: #b02a37;
+}

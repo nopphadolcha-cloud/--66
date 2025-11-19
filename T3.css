@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Mali&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+/* --- ตั้งค่าพื้นฐาน --- */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    margin: 0;
+}
+
+/* --- 1. สไตล์แถบเมนู (Navbar) --- */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* เน้นเมนูที่กำลังเปิดอยู่ */
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-weight: bold;
+    color: #333333 !important;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* --- 2. สไตล์รูปภาพแบนเนอร์ (Hero) --- */
+.hero-image {
+    position: relative; 
+    width: 100%;
+    height: 350px; 
+    background-image: url('https://rocketmedialab.co/wp-content/uploads/2022/04/piqsels.com-id-zkmfo-2048x1389.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1; 
+}
+
+.hero-text {
+    position: relative; 
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* --- 2. สไตล์รูปภาพแบนเนอร์ (Hero) --- */
+.hero-image {
+    position: relative; 
+    width: 100%;
+    height: 350px; 
+    background-image: url('https://image.pollinations.ai/prompt/people%20collecting%20trash%20in%20a%20park%2C%20soft%20bokeh%20background');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1; 
+}
+
+.hero-text {
+    position: relative; 
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+/* --- 3. สไตล์ส่วนเนื้อหาและวิดีโอ (จากหน้าแรก) --- */
+.content-area {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- สไตล์จากหน้าอื่นๆ (ผมเก็บไว้ให้) --- */
+.content { 
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    max-width: 1200px;
+}
+.content h2 { 
+    text-align: start;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.content h4 {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #4caf50;
+    text-align: center;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+.card.organic ul, .card.general ul {
+    text-align: left;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    list-style-position: inside;
+}
+
+
+/* --- สีพื้นหลัง (สำคัญ! ดีไซน์ใหม่ใช้สีพวกนี้) --- */
+.bg-green-light { background-color: #ffffff; }
+.bg-yellow-light { background-color: #fff3cd; }
+.bg-red-light { background-color: #f8d7da; }
+.bg-blue-light { background-color: #d1ecf1; }
+
+/* --- สไตล์ตาราง (จากหน้าอื่น) --- */
+.recycle-price-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #e6f5e6; 
+    font-family: 'Sarabun', sans-serif;
+    margin-top: 20px;
+}
+/* ... (สไตล์ตารางอื่นๆ) ... */
+.recycle-price-table caption { caption-side: top; font-size: 1.5rem; font-weight: bold; text-align: left; padding: 10px 15px; color: #006400; }
+.recycle-price-table thead tr { background-color: #006400; color: #fff; text-align: left; font-weight: 600; }
+.recycle-price-table th, .recycle-price-table td { padding: 12px 15px; border-bottom: 1px solid #ccc; font-size: 1rem; }
+.recycle-price-table th:first-child { border-top-left-radius: 12px; }
+.recycle-price-table th:last-child { border-top-right-radius: 12px; }
+.recycle-price-table td:nth-child(3) { text-align: center; font-weight: bold; color: #2e7d32; }
+.recycle-price-table td:last-child { color: #555; font-style: italic; }
+.recycle-price-table tbody tr:hover { background-color: #d7f0d4; transition: background-color 0.3s ease; }
+
+
+/* --- 4. สไตล์ส่วนเนื้อหา (Intro Section) --- */
+.intro-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    max-width: 750px; 
+    margin: 0 auto; 
+    padding: 20px 0; 
+}
+
+.intro-icon {
+    font-size: 3.5rem; 
+    color: #E6B900; 
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 1rem;
+    line-height: 1.7; 
+    color: #333; 
+    margin-bottom: 30px;
+}
+
+/* --- สไตล์ปุ่ม (Button) --- */
+/* (หมายเหตุ: สไตล์นี้อาจทับซ้อนกับ Bootstrap .btn) */
+.btn {
+    display: inline-block; 
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #ffffff; 
+    border: 1px solid #555; 
+    color: #333; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 20px; 
+    font-weight: bold;
+    transition: all 0.3s ease; 
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background-color: #333; 
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+} 
+
+/* --- สไตล์เส้นคั่น --- */
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #eeeeee; 
+    margin: 30px 0; 
+}
+
+/* --- สไตล์ปุ่ม 2 ปุ่มล่าง --- */
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 20px 0; 
+}
+
+.container h1.text-center {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+.container p.text-center {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.waste-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 คอลัมน์สำหรับมือถือ */
+    gap: 1.5rem; 
+    max-width: 900px; 
+    margin: 0 auto 30px auto; 
+}
+
+.waste-card {
+    display: flex; 
+    align-items: center; 
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    min-height: 180px; 
+    overflow: hidden; 
+}
+
+.waste-card:hover {
+    transform: translateY(-5px); 
+}
+
+.waste-icon-title {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    min-width: 100px; 
+    text-align: center;
+    margin-right: 1.5rem; 
+}
+
+.waste-icon-title .small-icon {
+    width: 60px; 
+    height: 60px;
+    object-fit: contain; 
+    margin-bottom: 0.5rem;
+}
+
+.waste-icon-title h3 {
+    font-size: 1.25rem; 
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.waste-details {
+    flex-grow: 1; 
+    margin-right: 1.5rem; 
+}
+
+.waste-details p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.waste-details ul {
+    list-style: disc; 
+    margin: 0;
+    padding-left: 1.2rem;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.waste-details ul li {
+    margin-bottom: 0.3rem;
+}
+
+.waste-image {
+    min-width: 100px; 
+    text-align: right; 
+}
+
+.waste-image .main-waste-img {
+    width: 100px; 
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Responsive (สำคัญมาก) */
+@media (min-width: 768px) {
+    .waste-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
+    }
+}
+
+@media (min-width: 992px) {
+    .waste-grid {
+        grid-template-columns: 1fr; /* 1 คอลัมน์ (แบบกว้าง) */
+    }
+}
+
+/* --- (FIX) คืนค่าสีปุ่ม Social ใน Footer --- */
+/* โค้ดนี้จำเป็น เพราะสไตล์ .btn (สีเขียว) ด้านบน
+  มันไปทับสีของ Bootstrap (btn-primary, btn-dark, btn-danger)
+*/
+footer {
+    background-color: #2e7d32; /* ใช้สีเดียวกับธีมเว็บ */
+    color: whitesmoke;
+    padding: 20px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+footer .btn.btn-primary {
+    background: #0d6efd; /* สีน้ำเงิน default ของ Bootstrap */
+    border-color: #0d6efd;
+    color: white !important; /* บังคับให้ไอคอนเป็นสีขาว */
+}
+
+footer .btn.btn-dark {
+    background: #212529; /* สีดำ default ของ Bootstrap */
+    border-color: #212529;
+    color: white !important;
+}
+
+footer .btn.btn-danger {
+    background: #dc3545; /* สีแดง default ของ Bootstrap */
+    border-color: #dc3545;
+    color: white !important;
+}
+
+/* --- (FIX) สไตล์ตอนเอาเมาส์ชี้ด้วย --- */
+footer .btn.btn-primary:hover {
+    background: #0b5ed7; 
+    border-color: #0a58ca;
+}
+
+footer .btn.btn-dark:hover {
+    background: #1c1f23;
+    border-color: #1a1e21;
+}
+
+footer .btn.btn-danger:hover {
+    background: #bb2d3b;
+    border-color: #b02a37;
+}
+
+
+@media (max-width: 768px) {
+    /* Hero */
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    /* Hero Text on Image */
+    .hero-text {
+        top: 20%;
+        padding: 15px;
+        width: 95%;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+    
+    /* Content */
+    .content {
+        padding: 2rem 1rem;
+    }
+    
+    .content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content h4 {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    /* Grid */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Button */
+    .btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    /* Video */
+    .video-center video {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 1.2rem;
+    }
+    
+    .hero-text p {
+        font-size: 0.8rem;
+    }
+    
+    .card-icon {
+        font-size: 2.5rem;
+    }
+    
+    .card h3 {
+        font-size: 1.2rem;
+    }
+}
