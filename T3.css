@@ -470,4 +470,11 @@ footer .btn.btn-danger:hover {
     border-color: #b02a37;
 }
 
+.content .hero-img {
+    width: 100%;
+    max-width: 750px;  /* ขนาดใหญ่สุด */
+    height: auto;
+    border-radius: 10px; /* ถ้าต้องการ */
+}
+
 
