@@ -65,11 +65,21 @@ body {
 }
 
 /* --- 2. สไตล์รูปภาพแบนเนอร์ (Hero) --- */
+.hero {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;         /* มุมโค้ง */
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1); /* เงานุ่ม */
+    text-align: center;          /* จัดกลาง */
+}
+
 .hero-image {
     position: relative; 
     width: 100%;
     height: 350px; 
-    background-image: url('https://rocketmedialab.co/wp-content/uploads/2022/04/piqsels.com-id-zkmfo-2048x1389.jpg');
+    background-image: url('https://images.pexels.com/photos/5029859/pexels-photo-5029859.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -107,51 +117,6 @@ body {
     font-size: 1.5rem;
     margin: 0;
 }
-
-/* --- 2. สไตล์รูปภาพแบนเนอร์ (Hero) --- */
-.hero-image {
-    position: relative; 
-    width: 100%;
-    height: 350px; 
-    background-image: url('https://image.pollinations.ai/prompt/people%20collecting%20trash%20in%20a%20park%2C%20soft%20bokeh%20background');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-}
-
-.hero-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1; 
-}
-
-.hero-text {
-    position: relative; 
-    z-index: 2;
-    text-align: center;
-}
-
-.hero-text h1 {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-    line-height: 1.2;
-}
-
-.hero-text p {
-    font-size: 1.5rem;
-    margin: 0;
-}
-
 
 /* --- 3. สไตล์ส่วนเนื้อหาและวิดีโอ (จากหน้าแรก) --- */
 .content-area {
@@ -243,9 +208,19 @@ body {
     list-style-position: inside;
 }
 
+/* กรอบครอบทั้ง section วิธีแยกขยะ */
+.container.section-waste {
+    border-radius: 20px;        /* มุมโค้ง */
+    padding: 30px;              /* เว้นระยะขอบ */
+    background-color: #ffffff;  /* สีพื้นขาว */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* เงานุ่ม */
+    max-width: 1000px;          /* กำหนดความกว้างสูงสุด */
+    margin: 30px auto;          /* จัดกึ่งกลางหน้าจอ */
+}
+
 
 /* --- สีพื้นหลัง (สำคัญ! ดีไซน์ใหม่ใช้สีพวกนี้) --- */
-.bg-green-light { background-color: #ffffff; }
+.bg-green-light { background-color: #89dd97; }
 .bg-yellow-light { background-color: #fff3cd; }
 .bg-red-light { background-color: #f8d7da; }
 .bg-blue-light { background-color: #d1ecf1; }
@@ -496,77 +471,3 @@ footer .btn.btn-danger:hover {
 }
 
 
-@media (max-width: 768px) {
-    /* Hero */
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .hero p {
-        font-size: 1rem;
-    }
-    
-    /* Hero Text on Image */
-    .hero-text {
-        top: 20%;
-        padding: 15px;
-        width: 95%;
-    }
-    
-    .hero-text h1 {
-        font-size: 1.5rem;
-    }
-    
-    .hero-text p {
-        font-size: 0.9rem;
-    }
-    
-    /* Content */
-    .content {
-        padding: 2rem 1rem;
-    }
-    
-    .content h2 {
-        font-size: 1.5rem;
-    }
-    
-    .content h4 {
-        font-size: 1rem;
-        text-align: left;
-    }
-    
-    /* Grid */
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    /* Button */
-    .btn {
-        font-size: 1.2rem;
-        padding: 0.8rem 1.5rem;
-    }
-    
-    /* Video */
-    .video-center video {
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero-text h1 {
-        font-size: 1.2rem;
-    }
-    
-    .hero-text p {
-        font-size: 0.8rem;
-    }
-    
-    .card-icon {
-        font-size: 2.5rem;
-    }
-    
-    .card h3 {
-        font-size: 1.2rem;
-    }
-}
