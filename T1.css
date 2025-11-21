@@ -128,10 +128,18 @@ body {
     max-width: 1200px;
 }
 
+.content p {   
+    text-align: start;
+    margin-bottom: 1rem;
+    margin-top: 2rem; 
+    color: #333;
+}
+
 .content h2 {   
     text-align: start;
     font-size: 2rem;
     margin-bottom: 1rem;
+    margin-top: 2rem; 
     color: #333;
 }
 
@@ -472,4 +480,12 @@ footer .btn.btn-danger:hover {
 @keyframes slide {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); } /* เลื่อนไปครึ่งความยาวของทั้งหมด */
+}
+
+.modal {
+    scroll-behavior: auto !important;  /* ป้องกัน smooth scroll */
+}
+
+.modal.show {
+    top: 0 !important;  /* ให้ modal เริ่มจาก top ปัจจุบัน */
 }
