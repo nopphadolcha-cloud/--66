@@ -1,328 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>เว็บไซต์ให้ความรู้เรื่องการแยกขยะ</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="T1.css">
-    </head>
-    <body>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์ให้ความรู้เรื่องการแยกขยะ</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="T1.css">
+</head>
+<body>
 
-
-
-        <!-- สร้างเมนูไฟล์ -->
-         <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top">
-            <div class="container">
-                <a href="#" class="navbar-brand">♻️ แยกขยะเพื่อโลกของเรา </a>
-            
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">♻️ แยกขยะเพื่อโลกของเรา</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
                 <span class="navbar-toggler-icon"></span>
-
             </button>
             <div class="collapse navbar-collapse" id="navbar1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="index.html"class="nav-link">หน้าแรก</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#"class="nav-link active">ประเภทขยะ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="T3.html"class="nav-link">วิธีการแยกขยะ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="T4.html"class="nav-link">ประโยชน์</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="T5.html"class="nav-link">กิจกรรมทั้งหมด</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">ติดต่อเรา</a>
-                    </li>
-
+                    <li class="nav-item"><a href="index.html" class="nav-link">หน้าแรก</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active">ประเภทขยะ</a></li>
+                    <li class="nav-item"><a href="T3.html" class="nav-link">วิธีการแยกขยะ</a></li>
+                    <li class="nav-item"><a href="T4.html" class="nav-link">ประโยชน์</a></li>
+                    <li class="nav-item"><a href="T5.html" class="nav-link">กิจกรรมทั้งหมด</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">ติดต่อเรา</a></li>
                 </ul>
-
             </div>
-            </div>
-        </nav>
-
-        <div class="image-container">
-            <img src="https://rocketmedialab.co/wp-content/uploads/2022/04/piqsels.com-id-zkmfo-2048x1389.jpg" alt="ขยะ">
         </div>
+    </nav>
 
+    <!-- Image Header -->
+    <div class="image-container">
+        <img src="https://rocketmedialab.co/wp-content/uploads/2022/04/piqsels.com-id-zkmfo-2048x1389.jpg" alt="ขยะ" class="img-fluid w-100">
+    </div>
 
+    <!-- Hero Section -->
+    <section class="hero text-center my-4">
+        <h1>🗑️ ประเภทของขยะ</h1>
+        <p>รู้จักขยะแต่ละประเภท เพื่อการแยกที่ถูกต้อง</p>
+    </section>
 
+    <!-- Content Section: Image -->
+    <section class="content text-center my-4">
+        <img src="image/ประเภทขยะ.png" alt="แยกขยะ" class="img-fluid hero-img">
+    </section>
 
-        <section class="hero">
-            <!-- section: แบ่งส่วนเนื้อหา -->
-        
-            <h1>🗑️ ประเภทของขยะ</h1>
-            <!-- h1: หัวข้อหลักของหน้า (ควรมีเพียง 1 ต่อหน้า) -->
-        
-            <p>
-                รู้จักขยะแต่ละประเภท เพื่อการแยกที่ถูกต้อง
-            </p>
-            <!-- p: ย่อหน้าข้อความ -->
-        </section>
+    <!-- Video Section -->
+    <section class="content text-center my-4">
+        <div class="video-center mb-3">
+            <video width="100%" max-width="960" height="auto" controls autoplay loop muted>
+                <source src="video/แยกขยะ_medium.mp4" type="video/mp4">
+                <source src="video/แยกขยะ_medium.webm" type="video/webm">
+                <p>Browser ของคุณไม่รองรับการเล่นไฟล์ Video</p>
+            </video>
+        </div>
+        <h2>🚮 ทำไมต้องแยกขยะ?</h2>
+        <h4>
+            การแยกขยะคือการแบ่งขยะออกเป็นประเภทต่างๆ 
+            เพื่อให้ง่ายต่อการนำไปกำจัดหรือนำกลับมาใช้ใหม่ โดยทั่วไปจะแบ่งเป็น 4 ประเภทหลัก 
+            คือ ขยะอินทรีย์, ขยะรีไซเคิล, ขยะทั่วไป และขยะอันตราย ซึ่งแต่ละประเภทจะถูกทิ้งในถังขยะที่มีสีแตกต่างกัน. 
+            การแยกขยะช่วยลดปริมาณขยะที่ต้องนำไปฝังกลบ ส่งเสริมการรีไซเคิล และลดผลกระทบต่อสิ่งแวดล้อม.
+        </h4>
+    </section>
 
-
-
-        <section class="content">
-            <div class="img-background"> 
-                <img src="image/ประเภทขยะ.png" alt="แยกขยะ" class="hero-img">
-            </div>
-        </section>
-
-
-
-        <section class="content">
-            <div class="video-center">
-                <video width="960" height="320" controls autoplay loop muted>
-                    <source src="video/แยกขยะ_medium.mp4"type ="video/mp4">
-                    <source src="video/แยกขยะ_medium.webm" type="video/webm">    
-                    
-                    <p>Browser ของคุณไม่รองรับการเล่นไฟล์ Video</p>
-                </video>
-            </div>
-            <h2>🚮 ทำไมต้องแยกขยะ?</h2>
-                <h4>  การแยกขยะคือการแบ่งขยะออกเป็นประเภทต่างๆ 
-                    เพื่อให้ง่ายต่อการนำไปกำจัดหรือนำกลับมาใช้ใหม่ โดยทั่วไปจะแบ่งเป็น 4 ประเภทหลัก 
-                    คือ ขยะอินทรีย์, ขยะรีไซเคิล, ขยะทั่วไป และขยะอันตราย ซึ่งแต่ละประเภทจะถูกทิ้งในถังขยะที่มีสีแตกต่างกัน. 
-                    การแยกขยะช่วยลดปริมาณขยะที่ต้องนำไปฝังกลบ ส่งเสริมการรีไซเคิล และลดผลกระทบต่อสิ่งแวดล้อม.
-                </h4>  
-        </section> 
-
-        
-
-        <section class="content">
-            <h2>🍃 ขยะเปียก/อินทรีย์ (Organic Waste)</h2>
-            <p>
-                ขยะที่เกิดจากสิ่งมีชีวิต สามารถย่อยสลายได้เอง 
-                และสามารถนำไปทำปุ๋ยหมักเพื่อใช้เลี้ยงพืชได้
-            </p>
-            
-            <div class="card organic" style="margin-bottom: 2rem;">
-                <!-- inline style สำหรับเว้นระยะด้านล่าง -->
-                <span class="card-icon">🥬</span>
-                <h3>ตัวอย่างขยะเปียก</h3>
-                <ul style="margin-left: 2rem; margin-top: 1rem;">
-                    <!-- ul: unordered list = รายการแบบไม่มีเลข -->
-                    <!-- li: list item = รายการย่อย -->
-                    <li> 🍖  เศษอาหาร เช่น ข้าว ผัก เนื้อสัตว์  </li>
-                    <li> 🍎  เปลือกผลไม้ เช่น กล้วย ส้ม แอปเปิ้ล </li>
-                    <li> 🌿  ใบไม้ กิ่งไม้ หญ้า </li>
-                    <li> 🍵  กากกาแฟ ถุงชา </li>
-                    <li> 🍛  เศษอาหารสัตว์เลี้ยง </li>
-                </ul>
-                <div class="slider-wrapper">
-                <div class="slider">
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2017/02/28/20/59/carrots-2106825_1280.jpg" alt="ผัก"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2016/08/17/10/04/fruits-1600023_1280.jpg" alt="ผลไม้"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2017/08/08/01/17/colorful-2609978_1280.jpg" alt="ใบไม้"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2014/08/22/21/25/coffee-424763_1280.jpg" alt="กากกาแฟ"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2017/07/26/16/48/bread-2542308_1280.jpg" alt="เศษอาหารสัตว์เลี้ยง "></div>
-
-                    <!-- ทำซ้ำภาพอีกครั้งเพื่อให้เลื่อนต่อเนื่อง -->
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2017/02/28/20/59/carrots-2106825_1280.jpg" alt="ผัก"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2016/08/17/10/04/fruits-1600023_1280.jpg" alt="ผลไม้"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2017/08/08/01/17/colorful-2609978_1280.jpg" alt="ใบไม้"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2014/08/22/21/25/coffee-424763_1280.jpg" alt="กากกาแฟ"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2017/07/26/16/48/bread-2542308_1280.jpg" alt="เศษอาหารสัตว์เลี้ยง "></div>
-                </div>
-                </div>
-                <p style="margin-top: 1rem;">
-                    <strong>ข้อควรระวัง:</strong> 
-                    แยกออกจากขยะประเภทอื่นเพื่อป้องกันกลิ่นและแมลง 
-                    ไม่ควรรอนานเกินไปก่อนทิ้ง
-                </p>
-            </div>
-            
-            <h2>🗑️ ขยะทั่วไป (General Waste)</h2>
-            <p>
-                ขยะที่ไม่สามารถรีไซเคิลได้ หรือไม่คุ้มค่าที่จะแปรรูป 
-                ขยะประเภทนี้มักจะถูกนำไปฝังกลบหรือเผา
-            </p>
-            
-            <div class="card general" style="margin-bottom: 2rem;">
-                <span class="card-icon">🧹</span>
-                <h3>ตัวอย่างขยะทั่วไป</h3>
-                <ul style="margin-left: 2rem; margin-top: 1rem;">
-                    <li> 🛍️  พลาสติกเปื้อน ถุงพลาสติกสกปรก</li>
-                    <li> 🍬  ถุงขนม ซองบะหมี่กึ่งสำเร็จรูป</li>
-                    <li> 🤧  กระดาษชำระ ผ้าอนามัย</li>
-                    <li> 👔  ผ้าขี้ริ้ว เศษผ้าที่ใช้ไม่ได้</li>
-                    <li> 🚬  บุหรี่ เถ้า</li>
-                </ul>
-                <div class="slider-wrapper">
-                <div class="slider">
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2013/04/03/19/52/garbage-100203_1280.jpg" alt="ถุงพลาสติกสกปรก"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2019/01/20/00/13/chips-3942875_1280.jpg" alt="ถุงขนม"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2014/04/04/17/51/toilet-paper-313820_1280.jpg" alt="กระดาษชำระ"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2014/01/15/08/17/rags-245431_1280.jpg" alt="ผ้าขี้ริ้ว"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2013/02/20/07/21/cigarettes-83571_1280.jpg" alt="บุหรี่"></div>
-
-                    <!-- ทำซ้ำภาพอีกครั้งเพื่อให้เลื่อนต่อเนื่อง -->
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2013/04/03/19/52/garbage-100203_1280.jpg" alt="ถุงพลาสติกสกปรก"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2019/01/20/00/13/chips-3942875_1280.jpg" alt="ถุงขนม"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2014/04/04/17/51/toilet-paper-313820_1280.jpg" alt="กระดาษชำระ"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2014/01/15/08/17/rags-245431_1280.jpg" alt="ผ้าขี้ริ้ว"></div>
-                    <div class="slide"><img src="https://cdn.pixabay.com/photo/2013/02/20/07/21/cigarettes-83571_1280.jpg" alt="บุหรี่"></div>
-                </div>
+    <!-- Organic Waste -->
+    <section class="content my-4">
+        <h2>🍃 ขยะเปียก/อินทรีย์ (Organic Waste)</h2>
+        <p>ขยะที่เกิดจากสิ่งมีชีวิต สามารถย่อยสลายได้เอง และสามารถนำไปทำปุ๋ยหมักเพื่อใช้เลี้ยงพืชได้</p>
+        <div class="card organic mb-4 p-3">
+            <span class="card-icon">🥬</span>
+            <h3>ตัวอย่างขยะเปียก</h3>
+            <ul class="ms-4 mt-2">
+                <li>🍖 เศษอาหาร เช่น ข้าว ผัก เนื้อสัตว์</li>
+                <li>🍎 เปลือกผลไม้ เช่น กล้วย ส้ม แอปเปิ้ล</li>
+                <li>🌿 ใบไม้ กิ่งไม้ หญ้า</li>
+                <li>🍵 กากกาแฟ ถุงชา</li>
+                <li>🍛 เศษอาหารสัตว์เลี้ยง</li>
+            </ul>
+            <div class="slider-wrapper my-3">
+                <div class="slider d-flex overflow-hidden">
+                    <div class="slide flex-shrink-0"><img src="https://cdn.pixabay.com/photo/2017/02/28/20/59/carrots-2106825_1280.jpg" class="img-fluid" alt="ผัก"></div>
+                    <div class="slide flex-shrink-0"><img src="https://cdn.pixabay.com/photo/2016/08/17/10/04/fruits-1600023_1280.jpg" class="img-fluid" alt="ผลไม้"></div>
+                    <div class="slide flex-shrink-0"><img src="https://cdn.pixabay.com/photo/2017/08/08/01/17/colorful-2609978_1280.jpg" class="img-fluid" alt="ใบไม้"></div>
+                    <div class="slide flex-shrink-0"><img src="https://cdn.pixabay.com/photo/2014/08/22/21/25/coffee-424763_1280.jpg" class="img-fluid" alt="กากกาแฟ"></div>
+                    <div class="slide flex-shrink-0"><img src="https://cdn.pixabay.com/photo/2017/07/26/16/48/bread-2542308_1280.jpg" class="img-fluid" alt="เศษอาหารสัตว์เลี้ยง"></div>
                 </div>
             </div>
-            
-            <h2>⚠️ ขยะอันตราย (Hazardous Waste)</h2>
-            <p>
-                ขยะที่มีสารอันตรายหรือเป็นพิษ ต้องกำจัดอย่างถูกวิธี 
-                ห้ามทิ้งปะปนกับขยะทั่วไปเด็ดขาด เพราะอาจก่อให้เกิดอันตรายต่อสิ่งแวดล้อมและสุขภาพ
-            </p>
-            
-            <div class="grid">
-                <div class="card hazard">
+            <p><strong>ข้อควรระวัง:</strong> แยกออกจากขยะประเภทอื่นเพื่อป้องกันกลิ่นและแมลง ไม่ควรรอนานเกินไปก่อนทิ้ง</p>
+        </div>
+    </section>
+
+    <!-- General Waste -->
+    <section class="content my-4">
+        <h2>🗑️ ขยะทั่วไป (General Waste)</h2>
+        <p>ขยะที่ไม่สามารถรีไซเคิลได้ หรือไม่คุ้มค่าที่จะแปรรูป ขยะประเภทนี้มักจะถูกนำไปฝังกลบหรือเผา</p>
+        <div class="card general mb-4 p-3">
+            <span class="card-icon">🧹</span>
+            <h3>ตัวอย่างขยะทั่วไป</h3>
+            <ul class="ms-4 mt-2">
+                <li>🛍️ พลาสติกเปื้อน ถุงพลาสติกสกปรก</li>
+                <li>🍬 ถุงขนม ซองบะหมี่กึ่งสำเร็จรูป</li>
+                <li>🤧 กระดาษชำระ ผ้าอนามัย</li>
+                <li>👔 ผ้าขี้ริ้ว เศษผ้าที่ใช้ไม่ได้</li>
+                <li>🚬 บุหรี่ เถ้า</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Hazardous Waste -->
+    <section class="content my-4">
+        <h2>⚠️ ขยะอันตราย (Hazardous Waste)</h2>
+        <p>ขยะที่มีสารอันตรายหรือเป็นพิษ ต้องกำจัดอย่างถูกวิธี ห้ามทิ้งปะปนกับขยะทั่วไปเด็ดขาด</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+            <div class="col">
+                <div class="card hazard p-3">
                     <span class="card-icon">🔋</span>
                     <h3>แบตเตอรี่และถ่าน</h3>
-                    <p>มีสารเคมีอันตราย นำไปทิ้งที่จุดรับแบตเตอรี่ตามห้างสรรพสินค้า</p>
+                    <p>นำไปทิ้งที่จุดรับแบตเตอรี่ตามห้างสรรพสินค้า</p>
                 </div>
-                
-                <div class="card hazard">
+            </div>
+            <div class="col">
+                <div class="card hazard p-3">
                     <span class="card-icon">💡</span>
                     <h3>หลอดไฟ</h3>
                     <p>หลอดฟลูออเรสเซนต์มีปรอท ต้องกำจัดแยก</p>
                 </div>
-                
-                <div class="card hazard">
+            </div>
+            <div class="col">
+                <div class="card hazard p-3">
                     <span class="card-icon">🧪</span>
                     <h3>สารเคมี</h3>
                     <p>น้ำยาทำความสะอาด ยาฆ่าแมลง สีทาบ้าน</p>
                 </div>
-                
-                <div class="card hazard">
+            </div>
+            <div class="col">
+                <div class="card hazard p-3">
                     <span class="card-icon">💊</span>
                     <h3>ยาหมดอายุ</h3>
                     <p>นำไปคืนที่โรงพยาบาลหรือร้านขายยา</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-
-            <h2>📦 ขยะรีไซเคิล (Recyclable Waste)</h2>
-                <p>
-                    ขยะที่สามารถนำกลับไปแปรรูปเป็นวัตถุดิบใหม่ได้ 
-                    การแยกขยะประเภทนี้จะช่วยประหยัดทรัพยากรธรรมชาติและพลังงานมาก
-                </p>
-        
-        <!-- Grid สำหรับแสดงประเภทขยะรีไซเคิล -->
-            <div class="grid">
-                <div class="card recycle">
+    <!-- Recyclable Waste -->
+    <section class="content my-4">
+        <h2>📦 ขยะรีไซเคิล (Recyclable Waste)</h2>
+        <p>ขยะที่สามารถนำกลับไปแปรรูปเป็นวัตถุดิบใหม่ได้ การแยกขยะประเภทนี้จะช่วยประหยัดทรัพยากรธรรมชาติและพลังงานมาก</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+            <div class="col">
+                <div class="card recycle p-3">
                     <span class="card-icon">🥤</span>
                     <h3>พลาสติก</h3>
                     <p><strong>ตัวอย่าง:</strong> ขวดน้ำ ขวดนม ถุงพลาสติกสะอาด กล่องโฟม</p>
-                    <!-- strong: ทำให้ตัวหนา เน้นข้อความสำคัญ -->
-                    <p><strong>วิธีทิ้ง:</strong> ล้างให้สะอาด บีบให้แบน เพื่อประหยัดพื้นที่</p>
+                    <p><strong>วิธีทิ้ง:</strong> ล้างให้สะอาด บีบให้แบน</p>
                 </div>
-                
-                <div class="card recycle">
+            </div>
+            <div class="col">
+                <div class="card recycle p-3">
                     <span class="card-icon">📄</span>
                     <h3>กระดาษ</h3>
                     <p><strong>ตัวอย่าง:</strong> กระดาษถนอม หนังสือพิมพ์ กล่องกระดาษ</p>
                     <p><strong>วิธีทิ้ง:</strong> พับเก็บให้เรียบร้อย หลีกเลี่ยงกระดาษเปียกน้ำ</p>
                 </div>
-                
-                <div class="card recycle">
+            </div>
+            <div class="col">
+                <div class="card recycle p-3">
                     <span class="card-icon">🥫</span>
                     <h3>โลหะ</h3>
                     <p><strong>ตัวอย่าง:</strong> กระป๋องน้ำอัดลม ฝาขวด เศษเหล็ก</p>
                     <p><strong>วิธีทิ้ง:</strong> ล้างให้สะอาด บีบให้แบน</p>
                 </div>
-                
-                <div class="card recycle">
+            </div>
+            <div class="col">
+                <div class="card recycle p-3">
                     <span class="card-icon">🍾</span>
                     <h3>แก้ว</h3>
                     <p><strong>ตัวอย่าง:</strong> ขวดแก้ว ไห กระจก</p>
                     <p><strong>วิธีทิ้ง:</strong> ห่อให้ดีเพื่อความปลอดภัย แยกตามสี</p>
                 </div>
             </div>
-
-
-            <a href="index.html" class="btn btn-success">👈 กลับไปหน้าแรก</a>
-            <a href="T3.html" class="btn btn-success">ไปดูวิธีแยกขยะกันเลย 👉</a>
-        
-
-        </section>
-
-
-
-        <div class="modal fade" id="myModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">ติดต่อเรา</h5>
-                            <button class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="from-group">
-                                    <label>ชื่อ-นามสกุล *</label>
-                                    <input type="text" required placeholder="กรอกชื่อ-นามสกุล" class="form-control">
-                                </div>
-                                <div class="from-group">
-                                    <label>E-mail *</label>
-                                    <input type="email" required placeholder="example@domain.com" class="form-control">
-                                </div>
-                                <div class="from-group">
-                                    <label>เบอร์โทรศัพท์</label>
-                                    <input type="tel" placeholder="0XX-XXX-XXXX" class="form-control">
-                                </div>
-                                <div class="from-group">
-                                    <label for="subject">เรื่องที่ต้องการติดต่อ *</label>
-                                    <select id="subject" name="subject" required> <!-- required: บังคับกรอก -->
-                                        <option value="">-- กรุณาระบุเรื่องที่ต้องการติดต่อ --</option>
-                                        <option value="question">สอบถามข้อมูล</option>
-                                        <option value="suggestion">ข้อเสนอแนะ</option>
-                                        <option value="cooperation">ประสานงานความร่วมมือ</option>
-                                        <option value="complaint">ร้องเรียน</option>
-                                        <option value="other">อื่นๆ</option>
-                                    </select>
-                                </div>   
-                                <div class="from-group">
-                                    <label>รายละเอียด</label>
-                                    <textarea rows="6" cols="30" class="form-control"></textarea>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-danger" data-bs-dismiss="modal">ยกเลิก</button>
-                            <button class="btn btn-outline-success">ส่งข้อมูล</button>
-                        </div>
-                    </div>
-                </div>
-           </div>
-
-
-   
-
-        
-    
-
-    </body>
-    <footer class="footer">
-        <div class="container">
-            <p>&copy;  2025 เว็บไซต์ให้ความรู้เรื่องการแยกขยะ | จัดทำโดยกลุ่มจิงจุ้ง</p>    
         </div>
-        <div class="social-links">
-                <a href="https://facebook.com/" target="_blank" class="btn btn-primary btn-sm mx-1">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://www.tiktok.com/" target="_blank" class="btn btn-dark btn-sm mx-1">
-                    <i class="bi bi-tiktok"></i>
-                </a>
-                <a href="https://www.youtube.com/" target="_blank" class="btn btn-danger btn-sm mx-1">
-                    <i class="bi bi-youtube"></i>
-                </a>
-            </div>
-    </footer>
-</html>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <div class="text-center my-4">
+        <a href="index.html" class="btn btn-success mx-2">👈 กลับไปหน้าแรก</a>
+        <a href="T3.html" class="btn btn-success mx-2">ไปดูวิธีแยกขยะกันเลย 👉</a>
+    </div>
+
+    <!-- Modal Contact Form -
